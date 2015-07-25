@@ -1,15 +1,16 @@
-## Put comments here that give an overall description of what your
-## functions do
+## the functions takes a matrix and calculate its inverse
 
-## Write a short comment describing this function
+## this function receives a matrix and calculates its inverse, but, its not return
 
 makeCacheMatrix <- function(x = matrix()) {
-
+        inversa <- function() solve(x)
+        list(inversa = inversa)
 }
 
 
-## Write a short comment describing this function
+## receive like arguments the function makeCacheMatrix, and utilized for returns the inverse
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
+        makeCacheMatrix$inversa()
 }
